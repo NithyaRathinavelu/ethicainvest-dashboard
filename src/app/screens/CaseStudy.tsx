@@ -1,4 +1,5 @@
 import { Users, Target, TrendingUp, Zap, CheckCircle2, ArrowRight } from "lucide-react";
+import { TechnicalImplementation } from "../components/TechnicalImplementation";
 
 export function CaseStudy() {
   return (
@@ -411,6 +412,9 @@ export function CaseStudy() {
             </div>
           </div>
         </section>
+
+        {/* Technical Implementation */}
+        <TechnicalImplementation />
 
         {/* Final Design */}
         <section className="mb-20">
