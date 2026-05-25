@@ -1,0 +1,237 @@
+Design a premium dark-mode fintech web application called 
+"EthicaInvest" — an ethical robo-advisor built for the 
+Indian retail investor.
+
+COLOR SYSTEM:
+- Page background: #0D1B2A (deep navy)
+- Card background: #1A2B3C
+- Primary accent / gains: #00F5A0 (electric green)
+- Warning / drift: #F5A623 (amber)
+- Danger / loss: #FF4D4D (red)
+- Info / neutral: #00C2FF (teal)
+- Saffron accent (Indian identity): #FF9933 
+  (used sparingly on badges and highlights)
+- Text primary: #FFFFFF
+- Text secondary: #8899AA
+- Font: Space Grotesk (headers) + Inter (body)
+- All currency: Indian Rupee ₹ symbol, 
+  Indian number format (lakhs/crores):
+  ₹1,24,500 not $124,500
+  Show "₹12.4L" for compact display
+
+---
+
+SCREEN 1 — ONBOARDING QUIZ
+
+Full page centered card, max-width 560px.
+Logo: "EthicaInvest" with Ashoka chakra-inspired 
+leaf icon in electric green.
+Tagline: "Invest smarter. Invest ethically."
+
+4-step progress pill at top.
+
+Step 1 — "What is your investment horizon?"
+4 pill buttons:
+"Less than 1 year" / "1–3 years" / 
+"3–7 years" / "7+ years"
+
+Step 2 — "What is your monthly SIP capacity?"
+Slider from ₹500 to ₹1,00,000.
+Show formatted value above thumb: "₹5,000/mo"
+4 quick-select pills below: 
+"₹500" / "₹2,000" / "₹5,000" / "₹10,000"
+
+Step 3 — "How do you feel about market volatility?"
+Slider 1–10. Left: "Avoid risk" / Right: "Grow fast"
+Below slider: SEBI risk category auto-assigned:
+"Based on your score: Moderately High Risk (SEBI)"
+
+Step 4 — "Select your ethical framework"
+3 tall toggle cards:
+  - "ESG India" — leaf icon
+    "Funds screened for environment, social & 
+    governance by SEBI guidelines"
+  - "Shariah" — crescent icon  
+    "TASIS-certified Shariah-compliant Indian funds.
+    No interest, alcohol, or tobacco exposure."
+  - "Hybrid" — balance icon
+    "Combines ESG + broad market exposure"
+
+Step 5 — "Set your financial goal"
+Goal type selector pills: 
+"Retirement" / "Home" / "Education" / "Wealth"
+Two inputs: "Target amount ₹" + "Target year"
+Below: "Estimated SIP needed: ₹4,200/month"
+(in electric green, auto-calculated)
+
+CTA: "Build My Portfolio →" (full-width, green)
+
+---
+
+SCREEN 2 — MAIN DASHBOARD
+
+Top nav:
+- Left: EthicaInvest logo
+- Center: "Paper Portfolio · NSE/BSE" badge (amber)
+- Right: Bell icon + avatar
+
+HERO ROW — 5 stat cards:
+1. "Portfolio Value" → ₹1,24,500
+2. "Today's Return" → +₹1,420 / +1.15% (green)
+3. "vs Nifty 50" → Outperforming +0.43% (green)
+4. "Risk Category" → "Mod. High · 7/10" (amber gauge)
+5. "SIP Goal Progress":
+   Progress bar 34% in green.
+   "₹1.2L of ₹3.6L · On track for Dec 2026"
+
+MAIN AREA — 3 columns (40/35/25%):
+
+LEFT:
+  Donut chart showing 3 ETF slices:
+  - NIFTYBEES 40% (green)
+  - Mirae ESG ETF 30% (teal)
+  - Tata Ethical Fund 30% (saffron #FF9933)
+  Holdings table:
+  Fund Name | Type | Allocation | Drift | Status
+  NIFTYBEES | Equity | 40% | +2.1% | Aligned
+  Mirae ESG | ESG | 30% | +1.4% | Aligned
+  Tata Ethical | Shariah | 30% | −0.8% | Aligned
+
+MIDDLE:
+  30-day NAV performance chart (area chart, green fill).
+  X-axis: dates. Y-axis: ₹ portfolio value.
+  Hover tooltip: date + ₹ value.
+  
+  Below: "SIP History" timeline:
+  3 entries showing date, amount invested, 
+  and units allotted. E.g.:
+  "15 Jan · ₹5,000 SIP · 4.2 units NIFTYBEES"
+
+RIGHT:
+  "Portfolio Health" card — circular drift meter.
+  Needle in green "Aligned" zone.
+  
+  "ESG Impact Score" card:
+  Large "A" grade badge in electric green.
+  "Your portfolio avoids 91% of 
+  high-emission NSE-listed companies"
+  
+  Quick Actions:
+  "Invest ₹5,000 now" (green outline)
+  "Edit SIP schedule" (teal outline)
+
+Bottom bar:
+"⚡ Simulate Market Shock" button, red outline.
+Scenario pills: 
+"−10% Correction" | "−25% Crash" | "Nifty +15% Rally"
+Note below: "Simulates NSE circuit-breaker scenario"
+
+---
+
+SCREEN 3 — MARKET SHOCK (Alert State)
+
+Top banner (red):
+"⚡ NSE Circuit Breaker Simulated · −25% Drop · 
+Rebalancing Engine Triggered"
+
+Drift meter: deep red "Out of Range" zone.
+
+Holdings table all red:
+NIFTYBEES −27.4% | Mirae ESG −24.1% | Tata −22.8%
+
+Live rebalancing terminal (dark #0A0F1A panel):
+Monospace font, color-coded:
+[10:15:02] ⚡ Shock: NSE −25.00% injected
+[10:15:03] 🔴 DRIFT: NIFTYBEES 27.4% > 5% threshold  
+[10:15:04] ↑ SELL NIFTYBEES · ₹18,400 notional
+[10:15:05] ✓ Kite Connect confirmed · order_id #KT8821
+[10:15:06] ↓ BUY Tata Ethical · ₹9,200 ▌
+
+Before/After snapshot card:
+BEFORE: ₹1,24,500 total · NIFTYBEES 57.4%
+AFTER:  ₹1,31,200 total · NIFTYBEES 40.0%
+"Recovery: +₹6,700 realigned" in bold green
+
+---
+
+SCREEN 4 — INSIGHTS
+
+Page title: "Insights & Analytics"
+
+LEFT (60%):
+Large area chart — "My Portfolio vs Nifty 50"
+Two lines: electric green (EthicaInvest), 
+gray dashed (Nifty 50).
+Tabs: 1M / 3M / 6M / 1Y
+Key events annotated on timeline:
+Small flag pins showing "SIP invested" dates.
+
+Below: "Rebalancing Events" vertical timeline:
+4 events. Each shows date, what triggered it 
+(e.g. "Nifty fell 8.2%"), 
+and outcome ("Portfolio recovered ₹4,200").
+
+RIGHT (40%):
+"Goal Projection" card:
+Line chart curving up to ₹3,60,000 by Dec 2026.
+Shaded confidence band. 
+Milestone markers at 25% / 50% / 75%.
+"At current SIP of ₹5,000/month"
+
+"Fund Impact Cards" — 3 stacked cards:
+Each shows fund name, SEBI risk category,
+ESG grade, and 1-line impact note:
+NIFTYBEES | Very High Risk | B+ | 
+"Broad Nifty 50 market exposure"
+Mirae ESG | High Risk | A+ | 
+"Highest ESG-rated equity fund on NSE"
+Tata Ethical | High Risk | A | 
+"TASIS Shariah-certified, 0% financials"
+
+---
+
+SCREEN 5 — WHY THIS TRADE (modal)
+
+Title: "Why did this trade happen?"
+
+Two cards:
+"What we sold" (red border):
+NIFTYBEES · ₹18,400
+"Target 40% → Actual 57.4%
+NIFTYBEES outpaced other holdings,
+creating a 17.4% drift from target."
+
+"What we bought" (green border):
+Tata Ethical · ₹9,200
+"Target 30% → Actual 22.6%
+Buying Tata Ethical restores your
+Hybrid Shariah balance."
+
+Raw API payload panel (collapsible):
+Dark terminal showing Kite Connect JSON:
+{
+  "tradingsymbol": "NIFTYBEES",
+  "exchange": "NSE",
+  "transaction_type": "SELL",
+  "order_type": "MARKET",
+  "quantity": 184,
+  "product": "CNC"
+}
+
+Buttons: "Got it" + "View all trades →"
+
+---
+
+GLOBAL NOTES:
+- All numbers in Indian format: ₹1,24,500 
+  (not ₹124,500)
+- Compact: ₹1.2L, ₹3.6L, ₹1Cr
+- Benchmark label: "Nifty 50" not "S&P 500"
+- Regulatory badge on footer: 
+  "SEBI Paper Portfolio · Not real money"
+- Saffron (#FF9933) used only for 
+  Shariah fund accents and goal milestones
+- NSE/BSE exchange tags on all fund cards
+- SIP language throughout (not "deposit")
+- Mobile: 390px breakpoint — stat cards 
+  collapse to 2x2 grid + scrollable
