@@ -432,32 +432,22 @@ export function CaseStudy() {
                   Impact: Onboarding completion rate increased from 32% → 77%
                 </div>
               </div>
-              <div
-                className="aspect-[16/10] rounded-xl flex items-center justify-center"
-                style={{
-                  backgroundColor: "#1A2B3C",
-                  border: "2px dashed rgba(255, 255, 255, 0.2)",
-                }}
-              >
-                <div className="text-center">
-                  <div className="text-gray-400 text-sm mb-2">[Image Placeholder]</div>
-                  <div className="text-gray-500 text-xs">Onboarding Flow Mockup</div>
-                </div>
+              <div className="aspect-[16/10] rounded-xl overflow-hidden">
+                <img
+                  src="/images/onboarding-flow.png"
+                  alt="Onboarding Flow Mockup"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-8 items-center">
-              <div
-                className="aspect-[16/10] rounded-xl flex items-center justify-center"
-                style={{
-                  backgroundColor: "#1A2B3C",
-                  border: "2px dashed rgba(255, 255, 255, 0.2)",
-                }}
-              >
-                <div className="text-center">
-                  <div className="text-gray-400 text-sm mb-2">[Image Placeholder]</div>
-                  <div className="text-gray-500 text-xs">Live Dashboard Screenshot</div>
-                </div>
+              <div className="aspect-[16/10] rounded-xl overflow-hidden">
+                <img
+                  src="/images/dashboard-screenshot.png"
+                  alt="Live Dashboard Screenshot"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Real-Time Drift Meter & Kite Connect Logs</h3>
@@ -480,17 +470,12 @@ export function CaseStudy() {
                   Impact: Support tickets about rebalancing dropped by 62%
                 </div>
               </div>
-              <div
-                className="aspect-[16/10] rounded-xl flex items-center justify-center"
-                style={{
-                  backgroundColor: "#1A2B3C",
-                  border: "2px dashed rgba(255, 255, 255, 0.2)",
-                }}
-              >
-                <div className="text-center">
-                  <div className="text-gray-400 text-sm mb-2">[Image Placeholder]</div>
-                  <div className="text-gray-500 text-xs">Modal Component Design</div>
-                </div>
+              <div className="aspect-[16/10] rounded-xl overflow-hidden">
+                <img
+                  src="/images/modal-design.png"
+                  alt="Modal Component Design"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
