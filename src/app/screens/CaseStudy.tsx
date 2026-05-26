@@ -328,32 +328,6 @@ export function CaseStudy() {
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-white mb-6">Design Process & Evolution</h2>
 
-          {/* Wireframes */}
-          <div className="mb-12">
-            <h3 className="text-xl font-semibold text-white mb-6">Wireframes (Low-Fidelity)</h3>
-            <div className="grid grid-cols-3 gap-6">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-[4/3] rounded-xl flex items-center justify-center"
-                  style={{
-                    backgroundColor: "#1A2B3C",
-                    border: "2px dashed rgba(255, 255, 255, 0.2)",
-                  }}
-                >
-                  <div className="text-center">
-                    <div className="text-gray-400 text-sm mb-2">[Image Placeholder]</div>
-                    <div className="text-gray-500 text-xs">
-                      {i === 1 && "Early Quiz Wireframe"}
-                      {i === 2 && "Dashboard Layout Sketch"}
-                      {i === 3 && "Mobile Responsive Mock"}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* UX Challenges */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-6">UX Challenges & Design Decisions</h3>
